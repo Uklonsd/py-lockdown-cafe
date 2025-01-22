@@ -13,7 +13,7 @@ def go_to_cafe(friends: list, cafe: Cafe) -> str:
         except NotVaccinatedError:
             return "All friends should be vaccinated"
         except OutdatedVaccineError:
-            return "All friends should be vaccinated"
+            return "'All friends should have up-to-date vaccinations"
         except NotWearingMaskError:
             masks_to_buy += 1
 
